@@ -1,5 +1,9 @@
 # Proof Of Concept: React Native App integration in Android Native Fragment
 
+*Disclaimer: this is a solution taken from [this stackoverflow answer](https://stackoverflow.com/questions/35221447/react-native-inside-a-fragment), just updated with some minor changes for the current version of React Native and a more detailed "how to".*
+
+**If you want to use my project, just download it, `cd AndroidExample` and `npm install`.**
+
 ## Create React Native Application Example
 
 First thing first, `npm install -g react-native`. You have to [set up the development environment for React Native](https://reactnative.dev/docs/environment-setup) (using React Native CLI quickstart, until "Creating new application paragraph"), then
