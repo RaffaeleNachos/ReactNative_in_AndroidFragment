@@ -4,6 +4,9 @@
 
 **If you want to use my project, just download it, `cd AndroidExample` and `npm install`.**
 
+# Result
+<img src="https://imgur.com/78m52T1.gif"/>
+
 ## Create React Native Application Example
 
 First thing first, `npm install -g react-native`. You have to [set up the development environment for React Native](https://reactnative.dev/docs/environment-setup) (using React Native CLI quickstart, until "Creating new application paragraph"), then
