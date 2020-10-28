@@ -5,22 +5,23 @@
 **If you want to use my project, just download it, `cd AndroidExample` and `npm install`.**
 
 # Result
+
 <img src="https://imgur.com/78m52T1.gif"/>
 
 ## Create React Native Application Example
 
-First thing first, `npm install -g react-native`. You have to [set up the development environment for React Native](https://reactnative.dev/docs/environment-setup) (using React Native CLI quickstart, until "Creating new application paragraph"), then
+First thing first, `npm install -g react-native`. You have to [set up the development environment for React Native](https://reactnative.dev/docs/environment-setup) (using React Native CLI quickstart, until "Creating new application" paragraph), then
 
 ```bash
 npx react-native init RNExample
 cd RNExample
 ```
 
-then you can check if everything works by starting the React Native app with `npx react-native run-android`.
+You can check if everything works by launching the React Native app by `npx react-native run-android`.
 
 ## Android Native Application Example
 
-Create a folder for your integration project (in my case `mkdir AndroidExample`) and create a subfolder `/android`. Open Android studio and create a new project into `./AndroidExample/android` with API target Marshmallow (i will call the project RN_Integration).
+Create a folder for your integration project (in my case `mkdir AndroidExample`) and create a subfolder `/android`. Open Android Studio and create a new project into `./AndroidExample/android` with API target Marshmallow (i will call the project RN_Integration).
 
 In the root directory of your project folder create a new file `package.json`:
 
@@ -158,7 +159,7 @@ Copy the files of the previous created React Native project example to the root 
 
 *NOTE: This is a basic example, if your React Native App uses other dependencies you have to copy also the `package.json` and `npm install` the other packages.*
 
-In the Android studio project create an abstract class called ReactFragment that extends Fragment:
+In the Android Studio project create an abstract class called `ReactFragment` that extends `Fragment`:
 
 ```java
 public abstract class ReactFragment extends Fragment {
@@ -337,12 +338,8 @@ public class MyApplication extends Application implements ReactApplication {
 
 ## Launch the App
 
-Now build the Android Native Application with Gradle and before running you must start the React Native Metro server from the root folder of your integration project `npx react-native start`.
+Now build the Android Native Application with Gradle and before running you must start the React Native Metro server from the root folder of your integration project with `npx react-native start`.
 
 Run in Android Emulator, and as soon as you will go to the RN Fragment the Metro server will bundle the javascript and send it to the App. 
 
 DONE!
-
-
-
-
