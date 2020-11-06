@@ -13,3 +13,4 @@
 .externalNativeBuild
 .cxx
 node_modules/
+./AndroidExample/package-lock.json
