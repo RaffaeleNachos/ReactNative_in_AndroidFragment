@@ -96,6 +96,15 @@ public class MainActivity extends AppCompatActivity implements DefaultHardwareBa
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        if (mReactInstanceManager != null) {
+            mReactInstanceManager.onHostDestroy(this);
+        }
+    }
+
     // Open the React Native Developer Menu when you press the hardware menu button (use Ctrl + M in Android Studio)
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
