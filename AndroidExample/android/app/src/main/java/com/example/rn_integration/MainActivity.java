@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements DefaultHardwareBa
         super.onPause();
 
         if (mReactInstanceManager != null) {
-            mReactInstanceManager.onHostPause();
+            mReactInstanceManager.onHostPause(this);
         }
     }
 
